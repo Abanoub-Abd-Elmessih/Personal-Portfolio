@@ -135,6 +135,7 @@
   }
   html {
     scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-zinc-950 text-gray-200;

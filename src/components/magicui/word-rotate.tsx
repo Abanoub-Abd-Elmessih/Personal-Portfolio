@@ -42,7 +42,9 @@ export function WordRotate({
           className={cn(className)}
           {...motionProps}
         >
-          {words[index]}
+          <span className="drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
+            {words[index]}
+          </span>
         </motion.h1>
       </AnimatePresence>
     </div>
