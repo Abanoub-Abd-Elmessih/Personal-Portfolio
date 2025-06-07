@@ -133,6 +133,9 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    scroll-snap-type: y proximity;
+  }
   body {
     @apply bg-zinc-950 text-gray-200;
   }
