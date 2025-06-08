@@ -6,7 +6,6 @@ export default function App() {
     <>
       <Navbar />
       <HeroSection />
-      <HeroSection />
     </>
   );
 }
