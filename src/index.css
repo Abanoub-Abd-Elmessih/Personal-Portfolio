@@ -2,6 +2,7 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+@custom-variant hover (&:hover);
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -149,4 +150,13 @@
   body {
     @apply bg-zinc-950 text-gray-200 px-3;
   }
+  .section {
+    @apply h-dvh snap-start;
+  }
+}
+.NSWFont {
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }

@@ -8,7 +8,7 @@ import { ArrowDown } from "lucide-react";
 export const HeroSection = () => {
   return (
     <section
-      className="h-dvh flex flex-col items-center justify-center gap-8 snap-start"
+      className="h-dvh flex flex-col items-center justify-center gap-5 md:gap-8 snap-start pt-16"
       id="hero"
     >
       <WordRotate
@@ -25,15 +25,18 @@ export const HeroSection = () => {
       <HeroTechStack />
       <HeroButtons />
 
-      <button className="animate-bounce">
-        <a
-          href="#about"
-          className="flex flex-col items-center uppercase font-mono"
-        >
-          scroll
-          <ArrowDown className="text-indigo-500" />
-        </a>
-      </button>
+      <a
+        href="#about"
+        onClick={(e) => {
+          e.preventDefault();
+          const section = document.getElementById("about");
+          section?.scrollIntoView({ behavior: "smooth" });
+        }}
+        className="flex flex-col items-center uppercase font-mono my-5 animate-bounce cursor-pointer"
+      >
+        scroll
+        <ArrowDown className="text-indigo-500" />
+      </a>
     </section>
   );
 };
