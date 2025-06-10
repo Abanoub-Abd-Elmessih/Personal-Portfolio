@@ -8,7 +8,7 @@ import { ArrowDown } from "lucide-react";
 export const HeroSection = () => {
   return (
     <section
-      className="h-dvh flex flex-col items-center justify-center gap-5 md:gap-8 snap-start pt-16"
+      className="h-dvh flex flex-col items-center justify-center gap-5 md:gap-8 pt-16"
       id="hero"
     >
       <WordRotate
